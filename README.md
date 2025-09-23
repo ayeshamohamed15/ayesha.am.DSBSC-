@@ -4,18 +4,15 @@
 EX NO: 2	DSB-SC-AM MODULATOR AND DEMODULATOR
 
 AIM:
-
 To write a program to perform DSBSC modulation and demodulation using SCI LAB and study its spectral characteristics
 
 EQUIPMENTS REQUIRED
-
 •	Computer with i3 Processor
 •	SCI LAB
 
 Note: Keep all the switch faults in off position
 
 Algorithm:
-
 1.	Define Parameters:
 •	Fs: Sampling frequency.
 •	T: Duration of the signal.
@@ -32,13 +29,12 @@ Algorithm:
 •	Low-pass Filtering: Apply a Butterworth low-pass filter to remove the high- frequency components and recover the original message signal.
 5.	Visualization:
 Plot the message signal, carrier signal, DSBSC modulated signal, and the recovered signal after demodulation.
-PROCEDURE
 
+PROCEDURE
 •	Refer Algorithms and write code for the experiment.
 •	Open SCILAB in System
 •	Type your code in New Editor
 •	Save the file
- 
 •	Execute the code
 •	If any Error, correct it in code and execute again
 •	Verify the generated waveform using Tabulation and Model Waveform
@@ -48,31 +44,16 @@ Model Waveform
 <img width="703" height="679" alt="image" src="https://github.com/user-attachments/assets/e7c7c7f8-ccf2-41ac-b1f3-325989941a6f" />
 
 Program
-Am=2.1;
-fm=194;
-Ac=4.2;
-fc=1940;
-fs=19400;
-t=0:1/fs:2/fm;
-m=Am*cos(2*3.14*fm*t);
-subplot(3,1,1);
-plot(t,m);
-c=Ac*cos(2*3.14*fc*t);
-subplot(3,1,2);
-plot(t,c);
-s1=(Ac+m).*cos(2*3.14*fc*t);
-s2=(Ac-m).*cos(2*3.14*fc*t);
-s=s1-s2;
-subplot(3,1,3);
-plot(t,s);
 
+<img width="466" height="629" alt="image" src="https://github.com/user-attachments/assets/9abc3066-c4c0-42e3-8171-a9a608f35aed" />
 
 Output Graph
-<img width="1919" height="898" alt="image" src="https://github.com/user-attachments/assets/44bf8b7c-7e45-4a85-a0cd-e6ebb31e32b5" />
 
+<img width="1919" height="898" alt="image" src="https://github.com/user-attachments/assets/44bf8b7c-7e45-4a85-a0cd-e6ebb31e32b5" />
 
 Tablular Column
 
+![WhatsApp Image 2025-09-23 at 20 06 46_28b81b6f](https://github.com/user-attachments/assets/49e8db72-a32f-4b76-a6a5-f56ebfceb2e3)
 
 Result
 
